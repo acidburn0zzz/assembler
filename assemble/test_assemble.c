@@ -4,6 +4,7 @@
 #include <errno.h>
 
 #include "../parser/parser.h"
+#include "compiler.h"
 
 int main(int argn, char * const *argv)
 {
