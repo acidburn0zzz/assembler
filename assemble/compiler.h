@@ -4,11 +4,11 @@
 #include "../parser/parser.h"
 
 struct cmd {
-    int cond;
-    int opcode;
+	int cond;
+	int opcode;
 
-    int types[3];
-    int values[3];
+	int types[3];
+	int values[3];
 };
 
 struct cmd *assemble_operation(struct operation *op);

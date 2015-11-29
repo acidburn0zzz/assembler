@@ -19,7 +19,7 @@ int main(int argn, char * const *argv)
 
 		char out[strlen(argv[a]) + 8];
 		sprintf(out, "%s.object", argv[a]);
-        FILE *output = fopen(out, "w");
+		FILE *output = fopen(out, "w");
 
 		if (!input) {
 			fprintf(stderr, "Failed to open file '%s': %s\n", argv[a], strerror(errno));
@@ -29,7 +29,7 @@ int main(int argn, char * const *argv)
 		while (!feof(input)) {
 			char buf[1024] = "";
 			struct operation *op = 0;
-            struct cmd *command = 0;
+			struct cmd *command = 0;
 
 			if (!fgets(buf, sizeof(buf) - 1, input))
              		   	break;
@@ -38,7 +38,7 @@ int main(int argn, char * const *argv)
 			dump_operation(op);
 
 			command = assemble_operation(op);
-            dump_to_file(output, command);
+			dump_to_file(output, command);
 
 			free((void *)op);
 			free((void *)command);

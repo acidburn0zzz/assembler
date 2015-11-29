@@ -31,8 +31,8 @@ int main(int argn, char * const *argv)
              		   	break;
 
 			op = parse_code(buf);
-            analise_condition(op);
-            analise_operation(op);
+			analise_condition(op);
+			analise_operation(op);
 
 			free((void *)op);
 		}
