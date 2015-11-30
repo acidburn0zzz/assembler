@@ -16,4 +16,6 @@ const struct command commands[15] = {{"mov",   {AT_MEM,  AT_VAL,  AT_NONE}},
                                      {"sub",   {AT_MEM,  AT_VAL,  AT_VAL}},
                                      {"mul",   {AT_MEM,  AT_VAL,  AT_VAL}},
                                      {"seg",   {AT_MEM,  AT_VAL,  AT_VAL}},
-                                     {"nop",   {AT_NONE, AT_NONE, AT_NONE}}};
+                                     {"nop",   {AT_NONE, AT_NONE, AT_NONE}},
+                                     {"inc",   {AT_MEM,  AT_NONE, AT_NONE}},
+                                     {"dec",   {AT_MEM,  AT_NONE, AT_NONE}}};
