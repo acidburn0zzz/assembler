@@ -1,8 +1,8 @@
 #include "commands.h"
 
-const int NUM_CMDS = 15;
+const int NUM_CMDS = 17;
 
-const struct command commands[15] = {{"mov",   {AT_MEM,  AT_VAL,  AT_NONE}},
+const struct command commands[17] = {{"mov",   {AT_MEM,  AT_VAL,  AT_NONE}},
                                      {"push",  {AT_VAL,  AT_NONE, AT_NONE}},
                                      {"pop",   {AT_MEM,  AT_NONE, AT_NONE}},
                                      {"cmp",   {AT_VAL,  AT_VAL,  AT_NONE}},
