@@ -1,6 +1,7 @@
 #ifndef COMPILER_H
 #define COMPILER_H
 
+#include <stdio.h>
 #include "../parser/parser.h"
 
 struct cmd {

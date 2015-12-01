@@ -38,6 +38,8 @@ struct cmd *assemble_operation(struct operation *op)
 
 void dump_to_file(FILE *out, struct cmd *command)
 {
+	int i;
+
 	if (!out) {
 		fprintf(stderr, "No out!\n");
 		return;

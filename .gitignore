@@ -81,3 +81,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+assemble/.demo.asm.object.swp
+*.swp

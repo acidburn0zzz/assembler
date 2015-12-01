@@ -47,7 +47,7 @@ struct operation *parse_code(const char *code)
 	unsigned int i = 0;
 
 	for (i = 0; i < 5; i++) {
-        	if (sscanf(code, "%[0-9a-zA-Z#$]", tokens[i]) <= 0) {
+        	if (sscanf(code, "%[0-9a-zA-Z@#$]", tokens[i]) <= 0) {
 			free((void *)op);
 			return 0;
         	}
