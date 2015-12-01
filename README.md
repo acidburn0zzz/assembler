@@ -1,4 +1,4 @@
-# assembler
+# Assembler
 Small assembly-like language compiler
 # About language
 The instruction set is forked from arm instruction set, but it is abbrivated a some.
@@ -13,23 +13,23 @@ for giving a number, place there '#'.
 There are 32 registers: from r00 to r31
 
 The only 17 instructions:
-- mov
-- push
-- pop
-- add
-- sub
-- mul
-- seg
-- and
-- or
-- xor
-- not 
-- compl
-- swi
-- nop
-- inc
-- dec
-- cmp
+- mov [mem_dest] [value]
+- push [value]
+- pop [mem_dest]
+- add [mem_dest] [value] [value]
+- sub [mem_dest] [value] [value]
+- mul [mem_dest] [value] [value]
+- seg [mem_dest] [value] [value]
+- and [mem_dest] [value] [value]
+- or  [mem_dest] [value] [value]
+- xor [mem_dest] [value] [value]
+- not [mem_dest] [value]
+- compl [mem_dest] [value]
+- swi [value]
+- nop 
+- inc [mem_dest]
+- dec [mem_dest]
+- cmp [value] [value]
 
 And the only 7 conditions:
 - al - Execute always
