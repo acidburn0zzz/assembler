@@ -30,3 +30,12 @@ The only 17 instructions:
 - inc
 - dec
 - cmp
+
+And the only 7 conditions:
+- al - Execute always
+- eq - Only if compare flag set to equals
+- ne - Only if compare flag is not set to equals
+- ae - Only if compare flag is set to above or equals
+- le - Only if compare flag set to less or equals
+- av - Only if compare flag set to above
+- ls - Only if compare flag set to less
