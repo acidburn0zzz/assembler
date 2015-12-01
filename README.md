@@ -7,7 +7,7 @@ a condition for its executing.
 
 # Syntax
 The common syntax is:
-<condition> <instruction> <arg0> <arg1> <arg2>
+[condition] [instruction] [arg0] [arg1] [arg2].
 For giving argument as a register write 'r' after the number of it, for giving ram write '$' or '@' or 'm' and 
 for giving a number, place there '#'.
 There are 32 registers: from r00 to r31
