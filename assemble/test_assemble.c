@@ -35,6 +35,9 @@ int main(int argn, char * const *argv)
 			if (!fgets(buf, sizeof(buf) - 1, input))
              		   	break;
 
+			if (*buf == '\n')
+				continue;
+
 			op = parse_code(buf);
 			dump_operation(op);
 
