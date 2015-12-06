@@ -81,6 +81,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
 # Others
 *.swp
 *.object
+*.asm
