@@ -48,6 +48,8 @@ struct operation *parse_code(const char *code)
 
 	for (i = 0; i < 5; i++) {
         	if (sscanf(code, "%[0-9a-zA-Z@#$]", tokens[i]) <= 0) {
+			fprintf(stderr, "Error!\nUnknown symbol!\n"); // Tell about excepted error
+
 			free((void *)op);
 			return 0;
         	}
