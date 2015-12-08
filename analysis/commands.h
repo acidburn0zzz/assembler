@@ -12,6 +12,6 @@ struct command {
 };
 
 extern const int NUM_CMDS;
-extern const struct command commands[17];
+extern const struct command commands[18];
 
 #endif // COMMANDS_H

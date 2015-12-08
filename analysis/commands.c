@@ -1,21 +1,22 @@
 #include "commands.h"
 
-const int NUM_CMDS = 17;
+const int NUM_CMDS = 18;
 
-const struct command commands[17] = {{"mov",   {AT_MEM,  AT_VAL,  AT_NONE}},
-                                     {"push",  {AT_VAL,  AT_NONE, AT_NONE}},
-                                     {"pop",   {AT_MEM,  AT_NONE, AT_NONE}},
-                                     {"cmp",   {AT_VAL,  AT_VAL,  AT_NONE}},
-                                     {"swi",   {AT_VAL,  AT_NONE, AT_NONE}},
-                                     {"and",   {AT_MEM,  AT_VAL,  AT_VAL}},
-                                     {"or",    {AT_MEM,  AT_VAL,  AT_VAL}},
-                                     {"xor",   {AT_MEM,  AT_VAL,  AT_VAL}},
-                                     {"not",   {AT_MEM,  AT_VAL,  AT_NONE}},
-                                     {"compl", {AT_MEM,  AT_VAL,  AT_NONE}},
-                                     {"add",   {AT_MEM,  AT_VAL,  AT_VAL}},
-                                     {"sub",   {AT_MEM,  AT_VAL,  AT_VAL}},
-                                     {"mul",   {AT_MEM,  AT_VAL,  AT_VAL}},
-                                     {"seg",   {AT_MEM,  AT_VAL,  AT_VAL}},
-                                     {"nop",   {AT_NONE, AT_NONE, AT_NONE}},
-                                     {"inc",   {AT_MEM,  AT_NONE, AT_NONE}},
-                                     {"dec",   {AT_MEM,  AT_NONE, AT_NONE}}};
+const struct command commands[18] = {{"mov",    {AT_MEM,  AT_VAL,  AT_NONE}},
+                                     {"push",   {AT_VAL,  AT_NONE, AT_NONE}},
+                                     {"pop",    {AT_MEM,  AT_NONE, AT_NONE}},
+                                     {"cmp",    {AT_VAL,  AT_VAL,  AT_NONE}},
+                                     {"swi",    {AT_VAL,  AT_NONE, AT_NONE}},
+                                     {"and",    {AT_MEM,  AT_VAL,  AT_VAL}},
+                                     {"or",     {AT_MEM,  AT_VAL,  AT_VAL}},
+                                     {"xor",    {AT_MEM,  AT_VAL,  AT_VAL}},
+                                     {"not",    {AT_MEM,  AT_VAL,  AT_NONE}},
+                                     {"compl",  {AT_MEM,  AT_VAL,  AT_NONE}},
+                                     {"add",    {AT_MEM,  AT_VAL,  AT_VAL}},
+                                     {"sub",    {AT_MEM,  AT_VAL,  AT_VAL}},
+                                     {"mul",    {AT_MEM,  AT_VAL,  AT_VAL}},
+                                     {"seg",    {AT_MEM,  AT_VAL,  AT_VAL}},
+                                     {"nop",    {AT_NONE, AT_NONE, AT_NONE}},
+                                     {"inc",    {AT_MEM,  AT_NONE, AT_NONE}},
+                                     {"dec",    {AT_MEM,  AT_NONE, AT_NONE}},
+                                     {"return", {AT_VAL, AT_NONE, AT_NONE}}};
