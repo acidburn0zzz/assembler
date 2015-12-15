@@ -11,7 +11,7 @@ int main(int argn, char * const *argv)
 	int a = 0;
 
 	if (argn <= 1) {
-		fprintf(stderr, "No files for parsing\n");
+		fprintf(stderr, "No files for compiling\n");
 		return EINVAL;
 	}
 

@@ -86,3 +86,4 @@ $RECYCLE.BIN/
 *.swp
 *.object
 *.asm
+*.save

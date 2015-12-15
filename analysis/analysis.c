@@ -1,6 +1,7 @@
 #include "conditions.h"
 #include "commands.h"
 #include "analysis.h"
+
 #include <stdio.h>
 #include <string.h>
 
@@ -10,7 +11,7 @@ fprintf(stderr, "Error occured while analysis:\n" fmt, __VA_ARGS__);
 static int str_digit(char *str)
 {
 	unsigned int i = 0, l = strlen(str);
-	
+
 	for (i = 0; i < l; i++)
 		if (!isdigit(str[i]))
 			return 0;
@@ -42,7 +43,7 @@ int get_type(char *str)
 		break;
 
 		case 'r':
-			return ((str_reg(str))?(AT_MEM):(AT_ERROR));
+			return ((str_reg(str))?(AT_REG):(AT_ERROR));
 		break;
 
 		case '$':
@@ -53,7 +54,7 @@ int get_type(char *str)
 
 		case '\0':
 			return AT_NONE;
-		break;  	
+		break;
 
 		default:
 		break;
@@ -65,7 +66,7 @@ int get_type(char *str)
 int analise_condition(struct operation *op)
 {
 	int i = 0, result = 0;
-	
+
 	for (i = 0; i < NUM_COND; i++) {
 		if (!strcmp(op->cond, conditions[i])) {
 			result = 1;

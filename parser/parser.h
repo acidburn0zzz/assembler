@@ -2,11 +2,11 @@
 #define PARSER_H
 
 struct operation {
-	char cond[32];
-	char cmd[32];
-	char arg0[32];
-	char arg1[32];
-	char arg2[32];
+        char cond[4];
+        char cmd[8];
+        char arg0[32];
+        char arg1[32];
+        char arg2[32];
 };
 
 void dump_operation(struct operation *op);
