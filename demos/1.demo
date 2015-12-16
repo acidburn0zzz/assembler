@@ -1,8 +1,0 @@
-al mov r00, #0;set r00 to zero
-
-al cmp r00, #800
-le mul, r01, r00, r00
-le swi #5
-le mov r14, #1
-
-al return #0
