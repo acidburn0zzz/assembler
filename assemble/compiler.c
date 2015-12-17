@@ -31,7 +31,7 @@ struct cmd *assemble_operation(struct operation *op)
 		result->types[i] = get_type(args[i]);
 
 	for (i = 0; i < 3; i++)
-		result->values[i] = atoi(args[i] + 1);
+		result->values[i] = atof(args[i] + 1);
 
 	return result;
 }
@@ -53,7 +53,7 @@ void dump_to_file(FILE *out, struct cmd *command)
 	fprintf(out, "%d %d ", command->cond, command->opcode);
 
 	for (i = 0; i < 3; i++)
-		fprintf(out, "%d %d ", command->types[i], command->values[i]);
+		fprintf(out, "%d %lg ", command->types[i], command->values[i]);
 
 	fprintf(out, "\n");
 }

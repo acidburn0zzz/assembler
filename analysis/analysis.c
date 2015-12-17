@@ -13,7 +13,7 @@ static int str_digit(char *str)
 	unsigned int i = 0, l = strlen(str);
 
 	for (i = 0; i < l; i++)
-		if (!isdigit(str[i]))
+		if (!isdigit(str[i]) && i != '.' && i != '-')
 			return 0;
 
 	return 1;
