@@ -9,7 +9,7 @@ struct cmd {
 	int opcode;
 
 	int types[3];
-	double values[3];
+	int values[3];
 };
 
 struct cmd *assemble_operation(struct operation *op);
