@@ -22,7 +22,8 @@ void dump_operation(struct operation *op)
 static inline const char *skip(const char *line, char *skips)
 {
 	line += strlen(skips);
-	while ((*line == ' ') || (*line == ','))
+
+	while ((*line == ' ') || (*line == ',') || (*line == '\t'))
 		line++;
 
 	if ((*line == '\0') || (*line == '\n') || (*line == ';'))
