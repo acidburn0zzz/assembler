@@ -12,7 +12,7 @@ struct command {
     int arg_types[3];
 };
 
-extern const int NUM_CMDS;
-extern const struct command commands[18];
+#define NUM_CMDS 20
+extern const struct command commands[];
 
 #endif // COMMANDS_H
