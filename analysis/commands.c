@@ -18,5 +18,5 @@ const struct command commands[NUM_CMDS] = {{"mov",    {AT_REG,  AT_VAL,  AT_NONE
                                            {"nop",    {AT_NONE, AT_NONE, AT_NONE}},// Done
                                            {"inc",    {AT_REG,  AT_NONE, AT_NONE}},// Done
                                            {"dec",    {AT_REG,  AT_NONE, AT_NONE}},// Done
-                                           {"return", {AT_VAL,  AT_NONE, AT_NONE}}
+                                           {"return", {AT_VAL,  AT_NONE, AT_NONE}},
                                            {"shift",  {AT_REG,  AT_VAL,  AT_VAL}}};
