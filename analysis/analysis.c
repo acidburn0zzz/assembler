@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
 
 #define CRASH(fmt, ...) \
 fprintf(stderr, "Error occured while analysis:\n" fmt, __VA_ARGS__);
