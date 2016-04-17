@@ -14,4 +14,3 @@ for giving a number, place there '#'.
 # Instructions & others
 See wiki to have a little tutorial about language
 
-# assembler
